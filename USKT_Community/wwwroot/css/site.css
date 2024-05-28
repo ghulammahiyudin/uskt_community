@@ -1,0 +1,355 @@
+﻿/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* default css */
+body {
+    font-family: Open sans;
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: #0c1428;
+    --accent-color: #ffbb13;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --text-light-color: #666666;
+}
+
+/* utility css */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-inline: 120px;
+}
+
+.container-fluid {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 9px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+    .cta-btn:hover {
+        background-color: var(--accent-color);
+    }
+
+/* header */
+.header {
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 200px;
+}
+
+.menu-list {
+    gap: 20px;
+}
+
+.navbar-item {
+    font-size: 16px;
+    color: var(--white-color);
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+    .navbar-item:hover {
+        color: var(--accent-color);
+    }
+
+.header-cta-btn .cta-btn {
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+}
+
+    .header-cta-btn .cta-btn:hover {
+        background-color: var(--primary-color);
+        border: 2px solid var(--white-color);
+    }
+
+/* footer section */
+.footer {
+    padding: 40px 120px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.footer-top {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-top-content h2 {
+    font-size: 28px;
+    line-height: 1;
+}
+
+.footer-top-content p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-block: 20px;
+}
+
+.footer-cta-btn .cta-btn {
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+}
+
+    .footer-cta-btn .cta-btn:hover {
+        background-color: var(--primary-color);
+        border: 2px solid var(--white-color);
+    }
+
+.footer-top-image img {
+    width: 500px;
+}
+
+.footer-hr {
+    margin-block: 20px;
+    opacity: 0.5;
+}
+
+.footer-bottom {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom-text p {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.footer-menu {
+    align-items: center;
+    gap: 20px;
+}
+
+    .footer-menu a {
+        font-size: 16px;
+        line-height: 1;
+        color: var(--white-color);
+        transition: all 0.3s ease-in-out;
+    }
+
+        .footer-menu a:hover {
+            color: var(--accent-color);
+        }
+
+/* hero section */
+.hero-section {
+    width: 100%;
+    min-height: 90vh;
+    background-image: url('../img/hero-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: var(--white-color);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    width: 100%;
+}
+
+    .hero-content h1 {
+        text-align: center;
+        font-size: 80px;
+        line-height: 1.2;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    }
+
+        .hero-content h1 span {
+            color: var(--accent-color);
+        }
+
+/* about section */
+.about-section {
+    gap: 40px;
+    align-items: center;
+    padding-block: 40px;
+}
+
+    .about-section > * {
+        flex: 1;
+    }
+
+.about-content .sub-heading {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.about-content .about-heading {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-block: 10px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.about-cta-btn {
+    margin-top: 30px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* benefits section */
+.benefits-section {
+    gap: 40px;
+    align-items: center;
+    padding-block: 40px;
+}
+
+    .benefits-section > * {
+        flex: 1;
+    }
+
+.benefits-image img {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.benefits-box {
+    margin-block: 30px;
+}
+
+    .benefits-box h3 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    .benefits-box p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+/* info boxes section */
+.info-boxes-section {
+    padding-block: 40px;
+}
+
+    .info-boxes-section h2 {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+.info-boxes-content {
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.info-box i {
+    font-size: 32px;
+    color: var(--primary-color);
+}
+
+.info-box h4 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-block: 15px;
+}
+
+.info-box p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+/* faqs section */
+.faq-section {
+    max-width: 760px;
+    margin: 0 auto;
+    padding-block: 40px;
+}
+
+    .faq-section h2 {
+        font-size: 34px;
+        line-height: 1.4;
+        font-weight: 600;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+details {
+    cursor: pointer;
+    width: 100%;
+}
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    summary h4 {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+details > p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.faq-section hr {
+    border: 1px solid var(--primary-color);
+    opacity: 0.7;
+}

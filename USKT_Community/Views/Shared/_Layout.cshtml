@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- css file link -->
+	<link href="~/css/site.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- header-->
+    <header class="header container flex">
+        <div class="header-logo">
+			<a href="#">
+                <img src="~/img/logo-long.jpeg" alt="USKT Community Logo" />
+            </a>
+        </div>
+        <div class="header-menu">
+            <ul class="menu-list flex">
+                <li><a href="#" class="navbar-item">Home</a></li>
+                <li><a href="#" class="navbar-item">Discussions</a></li>
+                <li><a href="#" class="navbar-item">Members</a></li>
+                <li><a href="#" class="navbar-item">About</a></li>
+                <li><a href="#" class="navbar-item">Contact</a></li>
+            </ul>
+        </div>
+        <div class="header-cta-btn">
+            <a href="#" class="cta-btn">Join Now</a>
+         </div>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+    <!-- footer -->
+    <footer class="footer container-fluid">
+        <div class="footer-top flex">
+            <div class="footer-top-content">
+                <h2>Join our vibrant student community</h2>
+                <p>Stay connected with fellow students and never miss out any important update.</p>
+                <div class="footer-cta-btn">
+                    <a href="#" class="cta-btn">Join Now</a>
+                </div>
+            </div>
+            <div class="footer-top-image">
+                <img src="~/img/logo-long.jpeg" alt="USKT Community Logo" />
+            </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="footer-bottom flex">
+            <div class="footer-bottom-text">
+                <p>&copy; 2024 USKT Community</p>
+            </div>
+            <div class="footer-bottom-links">
+                <ul class="footer-menu flex">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
