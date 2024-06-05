@@ -18,6 +18,10 @@ namespace USKT_Community.Controllers
             ViewData["answer_four"] = " If you have any questions, concerns, or need assistance, our customer support team is here to help! You can reach us through the contact form on our website, and we'll get back to you as soon as possible.";
             ViewData["answer_five"] = "No, membership in our community is completely free. We believe in providing access to knowledge and resources without any barriers.";
 
+            TempData["info_one"] = "Connect with Peers to sahre your thoughts";
+            TempData["info_two"] = "Engage in Thoughtful Discussions";
+            TempData["info_three"] = "Be part of a Supportive Community";
+
             return View();
         }
     }
